@@ -46,7 +46,6 @@ export default {
 <style scoped lang="scss">
 header {
   background-color: white;
-  padding: 10px 0;
   margin-top: 20px;
 
   .container {
@@ -54,20 +53,31 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    .nav-menu {
+      display: flex;
+    }
     ul {
       display: flex;
       list-style-type: none;
+      align-items: center;
 
       li {
-        padding: 10px;
+        padding: 60px 0;
+        margin-right: 15px;
+        border-bottom: 4px solid transparent;
 
         a {
           color: #303030;
           font-weight: bold;
         }
       }
+      
       li.active {
-        background-color: lightblue;
+        border-bottom: 4px solid dodgerblue;
+      }
+
+      li:hover {
+        border-bottom: 4px solid dodgerblue;
       }
     }
   }

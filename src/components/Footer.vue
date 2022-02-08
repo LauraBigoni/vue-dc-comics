@@ -91,8 +91,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$main_color: white;
-$secondary_color: lightgrey;
+@import "../assets/scss/_vars.scss";
 
 footer {
   background-image: url("../assets/img/footer-bg.jpg");
@@ -103,7 +102,6 @@ footer {
   color: $main_color;
 
   .container {
-    
     .content {
       display: flex;
 
@@ -111,7 +109,7 @@ footer {
         background-image: url("../assets/img/dc-logo-bg.png");
         background-repeat: no-repeat;
         background-position: right center;
-        width:700px;
+        width: 700px;
       }
     }
   }
@@ -122,7 +120,7 @@ footer {
 
   #footer-nav {
     display: flex;
-    margin: 40px ;
+    margin: 40px;
 
     h5 {
       padding: 20px 0;
