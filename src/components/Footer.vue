@@ -133,7 +133,7 @@ footer {
     }
     ul {
       list-style-type: none;
-      padding-right: 20px;
+      padding-right: 30px;
 
       li {
           line-height: 20px;
@@ -158,6 +158,7 @@ footer {
 
       img {
         padding: 0 10px;
+        cursor: pointer;
       }
 
       .sign-up {
@@ -172,6 +173,7 @@ footer {
           color: dodgerblue;
           padding-right: 10px;
           font-size: 20px;
+          cursor: pointer;
         }
       }
     }

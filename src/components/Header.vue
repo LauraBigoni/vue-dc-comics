@@ -7,16 +7,7 @@
         </div>
         <nav class="nav-menu">
           <ul>
-            <li><a href="#">link1</a></li>
-            <li><a href="#">link2</a></li>
-            <li><a href="#">link3</a></li>
-            <li><a href="#">link4</a></li>
-            <li><a href="#">link5</a></li>
-            <li><a href="#">link6</a></li>
-            <li><a href="#">link7</a></li>
-            <li><a href="#">link8</a></li>
-            <li><a href="#">link9</a></li>
-            <li><a href="#">link10</a></li>
+            <li v-for="(nav, index) in navbar" :key="index"><a :href="nav.url">{{nav.text}}</a></li>
           </ul>
         </nav>
       </div>
@@ -27,6 +18,22 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      navbar: [
+        { text: "CHARACTERS", url: "#" },
+        { text: "COMICS", url: "#" },
+        { text: "MOVIES", url: "#" },
+        { text: "TV", url: "#" },
+        { text: "GAMES", url: "#" },
+        { text: "COLLECTIBLES", url: "#" },
+        { text: "VIDEOS", url: "#" },
+        { text: "FANS", url: "#" },
+        { text: "NEWS", url: "#" },
+        { text: "SHOP", url: "#" },
+      ]
+    }
+  }
 };
 </script>
 
@@ -50,6 +57,7 @@ header {
 
         a {
           color: #303030;
+          font-weight: bold;
         }
       }
     }
