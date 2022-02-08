@@ -16,7 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
+$main_font: 'Segoe UI', 'Open Sans', Helvetica, sans-serif;
+$lighter_font: 'Segoe UI Light', 'Open Sans', Helvetica, sans-serif;
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $main_font;
 }
 </style>
