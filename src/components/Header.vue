@@ -7,7 +7,11 @@
         </div>
         <nav class="nav-menu">
           <ul>
-            <li v-for="(nav, index) in navbar" :key="index">
+            <li
+              v-for="(nav, index) in navbar"
+              :key="index"
+              :class="{ active: nav.active }"
+            >
               <a :href="nav.url">{{ nav.text }}</a>
             </li>
           </ul>
@@ -23,16 +27,16 @@ export default {
   data() {
     return {
       navbar: [
-        { text: "CHARACTERS", url: "#" },
-        { text: "COMICS", url: "#" },
-        { text: "MOVIES", url: "#" },
-        { text: "TV", url: "#" },
-        { text: "GAMES", url: "#" },
-        { text: "COLLECTIBLES", url: "#" },
-        { text: "VIDEOS", url: "#" },
-        { text: "FANS", url: "#" },
-        { text: "NEWS", url: "#" },
-        { text: "SHOP", url: "#" },
+        { text: "CHARACTERS", url: "#", active: false },
+        { text: "COMICS", url: "#", active: false },
+        { text: "MOVIES", url: "#", active: true },
+        { text: "TV", url: "#", active: false },
+        { text: "GAMES", url: "#", active: false },
+        { text: "COLLECTIBLES", url: "#", active: false },
+        { text: "VIDEOS", url: "#", active: false },
+        { text: "FANS", url: "#", active: false },
+        { text: "NEWS", url: "#", active: false },
+        { text: "SHOP", url: "#", active: false },
       ],
     };
   },
@@ -61,6 +65,9 @@ header {
           color: #303030;
           font-weight: bold;
         }
+      }
+      li.active {
+        background-color: lightblue;
       }
     }
   }

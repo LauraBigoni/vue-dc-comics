@@ -103,28 +103,26 @@ footer {
   color: $main_color;
 
   .container {
-
+    
     .content {
       display: flex;
 
       .bigger-logo {
         background-image: url("../assets/img/dc-logo-bg.png");
         background-repeat: no-repeat;
-        position: relative;
-        bottom: 0;
-        left: 200px;
-        width: 600px;
-        height: 365px;
-        overflow: hidden;
+        background-position: right center;
+        width:700px;
       }
     }
   }
+
   a {
     color: $secondary_color;
   }
 
   #footer-nav {
     display: flex;
+    margin: 40px ;
 
     h5 {
       padding: 20px 0;
@@ -143,7 +141,7 @@ footer {
 
   #footer-social {
     background-color: #303030;
-    padding: 50px 0;
+    padding: 40px 0;
 
     .container {
       display: flex;

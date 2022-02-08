@@ -9,6 +9,10 @@
       <div class="container">
         <ul>
           <li v-for="(product, index) in products" :key="index">
+            <img
+              :class="{ resized: product.resized }"
+              :src="require('../assets/img/' + product.img)"
+            />
             <a :href="product.url">{{ product.text }}</a>
           </li>
         </ul>
@@ -24,29 +28,34 @@ export default {
     return {
       products: [
         {
-          img: "../assets/img/buy-digital-comics.png",
+          img: "buy-comics-digital-comics.png",
           text: "DIGITAL COMICS",
           url: "#",
+          resized: true,
         },
         {
-          img: "../assets/img/buy-comics-merchandise.png",
+          img: "buy-comics-merchandise.png",
           text: "DC MERCHANDISE",
           url: "#",
+          resized: false,
         },
         {
-          img: "../assets/img/buy-comics-subscriptions.png",
+          img: "buy-comics-subscriptions.png",
           text: "SUBSCRIPTION",
           url: "#",
+          resized: false,
         },
         {
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: "buy-comics-shop-locator.png",
           text: "COMIC SHOP LOCATOR",
           url: "#",
+          resized: true,
         },
         {
-          img: "../assets/img/buy-dc-power-visa.svg",
+          img: "buy-dc-power-visa.svg",
           text: "DC POWER VISA",
           url: "#",
+          resized: false,
         },
       ],
     };
@@ -65,12 +74,12 @@ main {
     align-items: center;
 
     // TODO: Rimuovere
-    padding: 45px 0;
+    padding: 35px 0;
   }
 
   #secondary-nav {
     background-color: dodgerblue;
-    padding: 50px 0;
+    padding: 30px 0;
 
     ul {
       list-style-type: none;
@@ -79,6 +88,18 @@ main {
 
       li {
         padding: 10px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 60px;
+          height: 66px;
+          margin-right: 10px;
+        }
+
+        img.resized {
+          width: 50px;
+        }
 
         a {
           color: $secondary_color;
