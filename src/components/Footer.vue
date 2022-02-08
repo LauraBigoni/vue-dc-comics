@@ -5,22 +5,25 @@
         <section id="footer-nav">
           <ul>
             <h5>DC COMICS</h5>
-            <li v-for="(comic, index) in comics" :key="index"><a :href="comic.url">{{comic.text}}</a></li>
-            <ul>
-                <br>
+            <li v-for="(comic, index) in comics" :key="index">
+              <a :href="comic.url">{{ comic.text }}</a>
+            </li>
             <h5>SHOP</h5>
-            <li v-for="(shop, index) in shop" :key="index"><a :href="shop.url">{{shop.text}}</a></li>
-          </ul>
+            <li v-for="(shop, index) in shop" :key="index">
+              <a :href="shop.url">{{ shop.text }}</a>
+            </li>
           </ul>
           <ul>
             <h5>DC</h5>
-            <li v-for="(dc, index) in dc" :key="index"><a :href="dc.url">{{dc.text}}</a></li>
-
+            <li v-for="(dc, index) in dc" :key="index">
+              <a :href="dc.url">{{ dc.text }}</a>
+            </li>
           </ul>
           <ul>
             <h5>SITES</h5>
-            <li v-for="(site, index) in sites" :key="index"><a :href="site.url">{{site.text}}</a></li>
-
+            <li v-for="(site, index) in sites" :key="index">
+              <a :href="site.url">{{ site.text }}</a>
+            </li>
           </ul>
         </section>
         <section class="bigger-logo">
@@ -50,42 +53,42 @@
 export default {
   name: "Footer",
   data() {
-      return {
-          comics: [
-              {text: "Characters" , url: "#"},
-              {text: "Comics" , url: "#"},
-              {text: "Movies" , url: "#"},
-              {text: "TV" , url: "#"},
-              {text: "Games" , url: "#"},
-              {text: "Videos" , url: "#"},
-              {text: "News" , url: "#"},
-          ],
-          shop: [
-              {text: "Shop DC" , url: "#"},
-              {text: "Shop DC Collectibles" , url: "#"},
-          ],
-          dc: [
-              {text: "Terms Of Use" , url: "#"},
-              {text: "Privacy policy (New)" , url: "#"},
-              {text: "Ad Choices" , url: "#"},
-              {text: "Advertising" , url: "#"},
-              {text: "Jobs" , url: "#"},
-              {text: "Subscriptions" , url: "#"},
-              {text: "Talent Workshops" , url: "#"},
-              {text: "CPSC Certificates" , url: "#"},
-              {text: "Ratings" , url: "#"},
-              {text: "Shop Help" , url: "#"},
-              {text: "Contact Us" , url: "#"},
-          ],
-          sites: [
-              {text: "DC" , url: "#"},
-              {text: "MAD Magazine" , url: "#"},
-              {text: "DC Kids" , url: "#"},
-              {text: "DC Universe" , url: "#"},
-              {text: "DC Power Visa" , url: "#"},
-          ]
-      }
-  }
+    return {
+      comics: [
+        { text: "Characters", url: "#" },
+        { text: "Comics", url: "#" },
+        { text: "Movies", url: "#" },
+        { text: "TV", url: "#" },
+        { text: "Games", url: "#" },
+        { text: "Videos", url: "#" },
+        { text: "News", url: "#" },
+      ],
+      shop: [
+        { text: "Shop DC", url: "#" },
+        { text: "Shop DC Collectibles", url: "#" },
+      ],
+      dc: [
+        { text: "Terms Of Use", url: "#" },
+        { text: "Privacy policy (New)", url: "#" },
+        { text: "Ad Choices", url: "#" },
+        { text: "Advertising", url: "#" },
+        { text: "Jobs", url: "#" },
+        { text: "Subscriptions", url: "#" },
+        { text: "Talent Workshops", url: "#" },
+        { text: "CPSC Certificates", url: "#" },
+        { text: "Ratings", url: "#" },
+        { text: "Shop Help", url: "#" },
+        { text: "Contact Us", url: "#" },
+      ],
+      sites: [
+        { text: "DC", url: "#" },
+        { text: "MAD Magazine", url: "#" },
+        { text: "DC Kids", url: "#" },
+        { text: "DC Universe", url: "#" },
+        { text: "DC Power Visa", url: "#" },
+      ],
+    };
+  },
 };
 </script>
 
@@ -109,7 +112,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
 
-      .bigger-logo{
+      .bigger-logo {
         position: relative;
         bottom: 0;
         left: 200px;
@@ -122,13 +125,19 @@ footer {
   }
 
   #footer-nav {
-      display: flex;
+    display: flex;
 
+    h5 {
+        padding: 20px 0;
+        font-size: 20px;
+    }
     ul {
       list-style-type: none;
+      padding-right: 20px;
 
       li {
-        padding: 5px 0;
+          line-height: 20px;
+        font-size: 14px;
       }
     }
   }
