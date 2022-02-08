@@ -33,4 +33,14 @@ $lighter_font: 'Segoe UI Light', 'Open Sans', Helvetica, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// TODO: rimuovere 
+body {
+  background-color: black;
+}
 </style>

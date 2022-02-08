@@ -3,7 +3,7 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="" alt="DC Logo" />
+          <img src="../assets/img/dc-logo.png" alt="DC Logo" />
         </div>
         <nav class="nav-menu">
           <ul>
@@ -26,9 +26,29 @@
 
 <script>
 export default {
-  name: "",
+  name: "Header",
 };
 </script>
 
 <style scoped lang="scss">
+header {
+  background-color: white;
+  padding: 10px 0;
+  margin: 20px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        padding: 10px;
+      }
+    }
+  }
+}
 </style>
