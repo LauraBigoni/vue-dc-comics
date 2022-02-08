@@ -22,4 +22,15 @@ $lighter_font: 'Segoe UI Light', 'Open Sans', Helvetica, sans-serif;
 #app {
   font-family: $main_font;
 }
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
