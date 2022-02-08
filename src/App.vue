@@ -54,4 +54,8 @@ body {
 footer li {
   font-family: $lighter_font;
 }
+
+a {
+  text-decoration: none;
+}
 </style>

@@ -50,13 +50,11 @@ footer {
 
   a {
     color: $secondary_color;
-    text-decoration: none;
   }
 
   #footer-nav {
     ul {
       list-style-type: none;
-      text-decoration: none;
 
       li {
         padding: 5px 0;
@@ -73,10 +71,10 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
       a {
-          padding: 10px;
-          border: 2px solid dodgerblue;
+        padding: 10px;
+        border: 2px solid dodgerblue;
       }
 
       img {

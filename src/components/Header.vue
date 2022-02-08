@@ -50,7 +50,6 @@ header {
 
         a {
           color: #303030;
-          text-decoration: none;
         }
       }
     }

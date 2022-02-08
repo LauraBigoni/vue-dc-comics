@@ -50,10 +50,6 @@ main {
 
       li {
         padding: 10px;
-
-        a {
-          text-decoration: none;
-        }
       }
     }
   }
