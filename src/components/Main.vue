@@ -8,7 +8,9 @@
     <section id="secondary-nav">
       <div class="container">
         <ul>
-          <li v-for="(product, index) in products" :key="index"><a :href="product.url">{{product.text}}</a></li>
+          <li v-for="(product, index) in products" :key="index">
+            <a :href="product.url">{{ product.text }}</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -21,14 +23,34 @@ export default {
   data() {
     return {
       products: [
-        { img: '../assets/img/buy-digital-comics.png' , text: "DIGITAL COMICS", url: "#" },
-        { img: '../assets/img/buy-comics-merchandise.png' , text: "DC MERCHANDISE", url: "#" },
-        { img: '../assets/img/buy-comics-subscriptions.png' , text: "SUBSCRIPTION", url: "#" },
-        { img: '../assets/img/buy-comics-shop-locator.png' , text: "COMIC SHOP LOCATOR", url: "#" },
-        { img: '../assets/img/buy-dc-power-visa.svg' , text: "DC POWER VISA", url: "#" },
-      ]
-    }
-  }
+        {
+          img: "../assets/img/buy-digital-comics.png",
+          text: "DIGITAL COMICS",
+          url: "#",
+        },
+        {
+          img: "../assets/img/buy-comics-merchandise.png",
+          text: "DC MERCHANDISE",
+          url: "#",
+        },
+        {
+          img: "../assets/img/buy-comics-subscriptions.png",
+          text: "SUBSCRIPTION",
+          url: "#",
+        },
+        {
+          img: "../assets/img/buy-comics-shop-locator.png",
+          text: "COMIC SHOP LOCATOR",
+          url: "#",
+        },
+        {
+          img: "../assets/img/buy-dc-power-visa.svg",
+          text: "DC POWER VISA",
+          url: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -43,7 +65,7 @@ main {
     align-items: center;
 
     // TODO: Rimuovere
-    padding: 50px 0;
+    padding: 45px 0;
   }
 
   #secondary-nav {

@@ -7,7 +7,9 @@
         </div>
         <nav class="nav-menu">
           <ul>
-            <li v-for="(nav, index) in navbar" :key="index"><a :href="nav.url">{{nav.text}}</a></li>
+            <li v-for="(nav, index) in navbar" :key="index">
+              <a :href="nav.url">{{ nav.text }}</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -31,9 +33,9 @@ export default {
         { text: "FANS", url: "#" },
         { text: "NEWS", url: "#" },
         { text: "SHOP", url: "#" },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
 

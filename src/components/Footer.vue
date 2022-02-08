@@ -26,9 +26,7 @@
             </li>
           </ul>
         </section>
-        <section class="bigger-logo">
-          <img src="../assets/img/dc-logo-bg.png" alt="DC Logo" />
-        </section>
+        <section class="bigger-logo"></section>
       </div>
     </div>
     <section id="footer-social">
@@ -105,18 +103,19 @@ footer {
   color: $main_color;
 
   .container {
-    position: relative;
 
     .content {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
 
       .bigger-logo {
+        background-image: url("../assets/img/dc-logo-bg.png");
+        background-repeat: no-repeat;
         position: relative;
         bottom: 0;
         left: 200px;
-        width: 360px;
+        width: 600px;
+        height: 365px;
+        overflow: hidden;
       }
     }
   }
@@ -128,15 +127,15 @@ footer {
     display: flex;
 
     h5 {
-        padding: 20px 0;
-        font-size: 20px;
+      padding: 20px 0;
+      font-size: 20px;
     }
     ul {
       list-style-type: none;
       padding-right: 30px;
 
       li {
-          line-height: 20px;
+        line-height: 20px;
         font-size: 14px;
       }
     }
