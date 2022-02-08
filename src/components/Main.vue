@@ -8,13 +8,7 @@
     <section id="secondary-nav">
       <div class="container">
         <ul>
-          <li><a href="#">prodotto1</a></li>
-          <li><a href="#">prodotto2</a></li>
-          <li><a href="#">prodotto3</a></li>
-          <li><a href="#">prodotto4</a></li>
-          <li><a href="#">prodotto5</a></li>
-          <li><a href="#">prodotto6</a></li>
-          <li><a href="#">prodotto7</a></li>
+          <li v-for="(product, index) in products" :key="index"><a :href="product.url">{{product.text}}</a></li>
         </ul>
       </div>
     </section>
@@ -24,10 +18,23 @@
 <script>
 export default {
   name: "Main",
+  data() {
+    return {
+      products: [
+        { img: '../assets/img/buy-digital-comics.png' , text: "DIGITAL COMICS", url: "#" },
+        { img: '../assets/img/buy-comics-merchandise.png' , text: "DC MERCHANDISE", url: "#" },
+        { img: '../assets/img/buy-comics-subscriptions.png' , text: "SUBSCRIPTION", url: "#" },
+        { img: '../assets/img/buy-comics-shop-locator.png' , text: "COMIC SHOP LOCATOR", url: "#" },
+        { img: '../assets/img/buy-dc-power-visa.svg' , text: "DC POWER VISA", url: "#" },
+      ]
+    }
+  }
 };
 </script>
 
 <style scoped lang="scss">
+$secondary_color: lightgrey;
+
 main {
   color: white;
 
@@ -50,6 +57,11 @@ main {
 
       li {
         padding: 10px;
+
+        a {
+          color: $secondary_color;
+          font-weight: bolder;
+        }
       }
     }
   }
