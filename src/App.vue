@@ -45,9 +45,13 @@ img {
   height: auto;
 }
 
-
 body {
-  height: calc(100vh - 20px);
+  height: calc(100vh - 40px);
   background-color: black;
+}
+
+#secondary-nav,
+footer li {
+  font-family: $lighter_font;
 }
 </style>

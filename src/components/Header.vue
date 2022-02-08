@@ -47,6 +47,11 @@ header {
 
       li {
         padding: 10px;
+
+        a {
+          color: #303030;
+          text-decoration: none;
+        }
       }
     }
   }

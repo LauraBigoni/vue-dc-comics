@@ -8,11 +8,13 @@
     <section id="secondary-nav">
       <div class="container">
         <ul>
-          <li>prodotto1</li>
-          <li>prodotto2</li>
-          <li>prodotto3</li>
-          <li>prodotto4</li>
-          <li>prodotto5</li>
+          <li><a href="#">prodotto1</a></li>
+          <li><a href="#">prodotto2</a></li>
+          <li><a href="#">prodotto3</a></li>
+          <li><a href="#">prodotto4</a></li>
+          <li><a href="#">prodotto5</a></li>
+          <li><a href="#">prodotto6</a></li>
+          <li><a href="#">prodotto7</a></li>
         </ul>
       </div>
     </section>
@@ -34,12 +36,12 @@ main {
     align-items: center;
 
     // TODO: Rimuovere
-    height: 100px;
+    padding: 50px 0;
   }
 
   #secondary-nav {
     background-color: dodgerblue;
-    padding: 40px 0;
+    padding: 50px 0;
 
     ul {
       list-style-type: none;
@@ -48,6 +50,10 @@ main {
 
       li {
         padding: 10px;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
