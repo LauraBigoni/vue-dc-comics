@@ -28,8 +28,8 @@ export default {
     return {
       navbar: [
         { text: "CHARACTERS", url: "#", active: false },
-        { text: "COMICS", url: "#", active: false },
-        { text: "MOVIES", url: "#", active: true },
+        { text: "COMICS", url: "#", active: true },
+        { text: "MOVIES", url: "#", active: false },
         { text: "TV", url: "#", active: false },
         { text: "GAMES", url: "#", active: false },
         { text: "COLLECTIBLES", url: "#", active: false },
@@ -46,13 +46,16 @@ export default {
 <style scoped lang="scss">
 header {
   background-color: white;
-  margin-top: 20px;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
     .nav-menu {
       display: flex;
     }

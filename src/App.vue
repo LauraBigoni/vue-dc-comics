@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+	<div id="app">
+		<Header />
+		<Main />
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -12,12 +12,12 @@ import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
-  name: "App",
-  components: {
-    Header,
-    Main,
-    Footer,
-  },
+	name: "App",
+	components: {
+		Header,
+		Main,
+		Footer,
+	},
 };
 </script>
 
@@ -25,16 +25,11 @@ export default {
 @import "./assets/scss/style.scss";
 
 #app {
-  font-family: $main_font;
-}
-
-body {
-  height: calc(100vh - 40px);
-  background-color: black;
+	font-family: $main_font;
 }
 
 #secondary-nav,
 footer li {
-  font-family: $lighter_font;
+	font-family: $lighter_font;
 }
 </style>
