@@ -5,23 +5,23 @@
         <section id="footer-nav">
           <ul>
             <h5>DC COMICS</h5>
-            <li v-for="(comic, index) in comics" :key="index">
+            <li v-for="(comic, i) in comics" :key="i">
               <a :href="comic.url">{{ comic.text }}</a>
             </li>
             <h5>SHOP</h5>
-            <li v-for="(shop, index) in shop" :key="index">
+            <li v-for="(shop, i) in shop" :key="'A'+i">
               <a :href="shop.url">{{ shop.text }}</a>
             </li>
           </ul>
           <ul>
             <h5>DC</h5>
-            <li v-for="(dc, index) in dc" :key="index">
+            <li v-for="(dc, i) in dc" :key="i">
               <a :href="dc.url">{{ dc.text }}</a>
             </li>
           </ul>
           <ul>
             <h5>SITES</h5>
-            <li v-for="(site, index) in sites" :key="index">
+            <li v-for="(site, i) in sites" :key="i">
               <a :href="site.url">{{ site.text }}</a>
             </li>
           </ul>
