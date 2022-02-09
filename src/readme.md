@@ -4,3 +4,4 @@ Quando la struttura a macroblocchi è pronta, popolate le voci di menu dinamicam
 Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo al Sass!
 Bonus:
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass.
