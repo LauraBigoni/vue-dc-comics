@@ -162,7 +162,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$secondary_color: lightgrey;
+@import "../assets/scss/_vars.scss";
 
 main {
 	color: white;
