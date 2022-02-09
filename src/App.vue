@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<Header />
-		<Main />
+		<Main :products="products"/>
 		<Footer />
 	</div>
 </template>
@@ -17,6 +17,42 @@ export default {
 		Header,
 		Main,
 		Footer,
+	},
+	data() {
+		return {
+			products: [
+				{
+					img: "buy-comics-digital-comics.png",
+					text: "DIGITAL COMICS",
+					url: "#",
+					resized: true,
+				},
+				{
+					img: "buy-comics-merchandise.png",
+					text: "DC MERCHANDISE",
+					url: "#",
+					resized: false,
+				},
+				{
+					img: "buy-comics-subscriptions.png",
+					text: "SUBSCRIPTION",
+					url: "#",
+					resized: false,
+				},
+				{
+					img: "buy-comics-shop-locator.png",
+					text: "COMIC SHOP LOCATOR",
+					url: "#",
+					resized: true,
+				},
+				{
+					img: "buy-dc-power-visa.svg",
+					text: "DC POWER VISA",
+					url: "#",
+					resized: false,
+				},
+			],
+		};
 	},
 };
 </script>

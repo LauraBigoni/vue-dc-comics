@@ -14,15 +14,7 @@
 		</section>
 		<section id="secondary-nav">
 			<div class="container">
-				<ul>
-					<li v-for="(product, index) in products" :key="index">
-						<img
-							:class="{ resized: product.resized }"
-							:src="require('../assets/img/' + product.img)"
-						/>
-						<a :href="product.url">{{ product.text }}</a>
-					</li>
-				</ul>
+				<Products :products="products" />
 			</div>
 		</section>
 	</main>
@@ -30,48 +22,15 @@
 
 <script>
 import Comics from "./Comics.vue";
+import Products from "./Products.vue";
 
 export default {
 	name: "Main",
 	components: {
 		Comics,
+		Products,
 	},
-	data() {
-		return {
-			products: [
-				{
-					img: "buy-comics-digital-comics.png",
-					text: "DIGITAL COMICS",
-					url: "#",
-					resized: true,
-				},
-				{
-					img: "buy-comics-merchandise.png",
-					text: "DC MERCHANDISE",
-					url: "#",
-					resized: false,
-				},
-				{
-					img: "buy-comics-subscriptions.png",
-					text: "SUBSCRIPTION",
-					url: "#",
-					resized: false,
-				},
-				{
-					img: "buy-comics-shop-locator.png",
-					text: "COMIC SHOP LOCATOR",
-					url: "#",
-					resized: true,
-				},
-				{
-					img: "buy-dc-power-visa.svg",
-					text: "DC POWER VISA",
-					url: "#",
-					resized: false,
-				},
-			],
-		};
-	},
+	props: ["products"],
 };
 </script>
 
@@ -117,37 +76,8 @@ main {
 		background-color: dodgerblue;
 		cursor: pointer;
 	}
-}
-
-#secondary-nav {
-	background-color: dodgerblue;
-
-	ul {
-		list-style-type: none;
-		display: flex;
-		justify-content: space-around;
-
-		li {
-			padding: 10px;
-			display: flex;
-			align-items: center;
-
-			img {
-				width: 50px;
-				height: 56px;
-				margin-right: 10px;
-				color: $secondary_color;
-			}
-
-			img.resized {
-				width: 40px;
-			}
-
-			a {
-				color: $secondary_color;
-				font-weight: bolder;
-			}
-		}
+	#secondary-nav {
+		background-color: dodgerblue;
 	}
 }
 </style>
